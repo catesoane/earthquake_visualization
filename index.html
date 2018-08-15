@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Earthquake Visualization</title>
+
+    <!--D3 cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.2/d3.js"></script>
+
+    <!-- Leaflet cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+    integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+    crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+    integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+    crossorigin=""></script>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+
+    <!-- my CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+    
+    <!-- header -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Earthquake Visualization</h1>
+            <p>The map below shows the earthquake data over the last 7 days.  The color and size of the circles corresponds with
+              the magnitude of the earthquake.  Click the circles for additional information.  
+            </p>
+        </div>
+    </div>
+
+    <div id="map"></div>
+    
+    <!-- my JS -->
+    <script type="text/javascript" src="js/logic.js"></script>
+    
+</body>
+
+</html>
